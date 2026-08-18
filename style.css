@@ -1,0 +1,125 @@
+:root {
+  --color-walnut-50: #fff3e5;
+  --color-walnut-100: #ffe6cc;
+  --color-walnut-200: #ffce99;
+  --color-walnut-300: #ffb566;
+  --color-walnut-400: #ff9c33;
+  --color-walnut-500: #ff8400;
+  --color-walnut-600: #cc6900;
+  --color-walnut-700: #994f00;
+  --color-walnut-800: #663500;
+  --color-walnut-900: #331a00;
+  --color-walnut-950: #241200;
+}
+
+body {
+  background-color: var(--color-walnut-100);
+  color: var(--color-walnut-500);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Dark mode toggled via JS with classList.toggle('dark-mode') */
+body.dark-mode {
+  background-color: var(--color-walnut-800);
+  color: var(--color-walnut-100);
+}
+
+body.dark-mode li {
+  background-color: var(--color-walnut-500);
+  color: var(--color-walnut-950);
+}
+
+header {
+  background-color: var(--color-walnut-950);
+  color: var(--color-walnut-500);
+  text-align: center;
+  margin: 20px;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  border: 2px solid var(--color-walnut-400);
+  border-radius: 30px;
+}
+
+.main {
+  background-color: var(--color-walnut-900);
+  display: block;
+  align-self: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.mode {
+  background-color: var(--color-walnut-500);
+  color: var(--color-walnut-950);
+  padding: 10px;
+  border-radius: 15px;
+  display: block;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: 0;
+  cursor: pointer;
+  border: none;
+}
+
+h2 {
+  background-color: var(--color-walnut-950);
+  color: var(--color-walnut-500);
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid var(--color-walnut-400);
+  border-radius: 30px;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  list-style-type: none;
+  margin: 5px;
+  background-color: var(--color-walnut-800);
+  color: var(--color-walnut-100);
+  padding: 8px 12px;
+  border: 1px solid var(--color-walnut-100);
+  border-radius: 15px;
+  min-width: 260px;
+}
+
+li label {
+  flex: 1;
+}
+
+li label.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  height: 25px;
+  padding: 0 10px;
+  cursor: pointer;
+  margin-left: auto;
+}
