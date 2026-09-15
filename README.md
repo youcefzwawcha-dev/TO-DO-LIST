@@ -67,20 +67,23 @@ All you need is a modern web browser — Chrome, Firefox, Edge, or Safari.
 ```bash
 git clone https://github.com/youcefzwawcha-dev/TO-DO-LIST.git
 cd TO-DO-LIST
-2. Open the app:
+```
 
+2. Open the app:
 Just double-click index.html, or if you use VS Code, right-click the file and choose Open with Live Server for auto-reload while editing.
 
 That's it — no install, no dependencies.
-
+```
+```
 📁 Project Structure
-
+```
 TO-DO-LIST/
 │
 ├── index.html      # Main HTML page
 ├── style.css       # Stylesheet
 ├── script.js       # App logic
 └──README.md       # Documentation
+```
 
 🧠 How It Works
 Type a task into the input field.
